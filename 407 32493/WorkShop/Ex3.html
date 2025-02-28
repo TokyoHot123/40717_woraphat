@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ครั้งที่ 3</title>
+</head>
+<body>
+    <h1>แบบฟอร์มบนเว็บ</h1>
+    <!--HTML Form-->
+    <!--Text Field ข้อความบรรทัดเดียว-->
+    <form>
+        Firstname: <input type="text" name="Firstname"><br><br>
+        Lastname: <input type="text" name="Lastname"><br><br>
+    </form>
+    <!--Submit Button-->
+    <form name="input" action="html_from_action.php" method="get">
+        username: <input type="text" name="user">
+        <input type="submit" value="submit"><br><br>
+        <!--Button-->
+        <input type="button" value="Hello World"><br><br>
+        <!--Password-->
+        Password: <input type="password" name="pwd"><br><br>
+        <!--Email-->
+        E-mail: <input type="email" name="username">
+        <input type="submit"><br><br>
+        <!--Url-->
+        Add your homepage:<input type="url" name="namepage">
+        <input type="submit"><br><br>
+        <!--Number-->
+        Quanity (between 1 and 50):
+        <input type="number" name="quanity" min="50" step="2">
+        <input type="submit"><br><br>
+        <!--Radio Button-->
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        <input type="radio" name="sex" value="lgbt+">LGBT+<br><br>
+        <!--Checkbox-->
+        <input type="checkbox" name="vehicle" value="Bike">I have a bike.<br>
+        <input type="checkbox" name="vehicle" value="Car">I have a car.<br><br>
+        <!--File-->
+        select your photo: <input type="file" name="photo"><br><br>
+        <!--Drop-Down List-->
+        <select name="Cars">
+            <option value="volvo">volvo</option>
+            <option value="saad">saad</option>
+            <option value="fiat">fiat</option>
+            <option value="audi">audi</option>
+        </select><br>
+        <!--Data List-->
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chorme">
+            <option value="Safari">
+        </datalist><br><br>
+        <!--textarea-->
+        <textarea rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea><br><br>
+        <!--Range-->
+        Points: <input type="range" name="points" min="1" max="10"><br><br>
+        <!--Color-->
+        Select your favorite color:
+        <input type="color" name="Favorite"><br><br>
+        <!--Date-->
+        Birthdate: <input type="date" name="bday"><br><br>
+        <!--Fieldset-->
+        <fieldset>
+            <legend>Peronal Information</legend>
+            Name: <input type="text" size="30" placeholder="กรอกชื่อนามสกุล" required><br><br>
+            E-mail: <input type="email" size="30" placeholder="กรอกชื่ออีเมลเทพลีลา"><br><br>
+            DOB: <input type="date" size="30"><br><br>
+            <input type="submit">
+        </fieldset><br><br><br>
+        Country code:
+        <input tabindex="text" name="code"
+            pattern="[A-Za_z]{3}"
+            title="Three letter country code.">
+            <input type="submit">
+    </form>
+</body>
+</html>
